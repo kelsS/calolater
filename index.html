@@ -15,111 +15,122 @@
 </head>
     <body id="app">
 
-        <main>
-            <form>
-                <div class="flex-container">
-                    <fieldset>
+        <div aria-labelledby="sparkles1 sparkles2" class="visually-hidden">Sparkles Emoji</div>
+        <h1>
+            <span id="sparkles1">✨</span>You go get those calories [lady|man|enby!]<span id="sparkles2">✨</span>
+        </h1>
         
-                        <div aria-labelledby="sparkles1 sparkles2" class="visually-hidden">Sparkles Emoji</div>
-                        <h1>
-                            <span id="sparkles1">✨</span>You go get those calories [lady|man|enby!]<span id="sparkles2">✨</span>
-                        </h1>
-        
-                        <div class="container">
-                    
-                            <label for="brkfast-label">Breakfast</label>
-
-                            <div class="input-field">
-                                <div aria-labelledby="cooking" class="visually-hidden">Cooking Emoji</div>
-                                <span class="label-icon" id="cooking">🍳</span>
-                                <input type="number" id="brkfast-label" class="input" placeholder="enter breakfast calories">
-                            </div>
-
-                        </div>
-
-                        <div class="container">
-
-                            <button class="add-btn" aria-label="plus">➕</button>
-                        </div>
-        
-                        <div class="container">
-
-                            <label for="lunch-label">Lunch</label>
-
-                            <div class="input-field">
-                                <div aria-labelledby="bento-box" class="visually-hidden">Cooking Emoji</div>
-                                <span class="label-icon" id="bento-box">🍱</span>
-                                <input type="number" id="lunch-label" class="input" placeholder="enter lunch calories">
-                            </div>
-                        </div>
-                        
-
-                        <div class="container">
-
-                            <button class="plus-btn" aria-label="plus">➕</button>
-
-                        </div>
-        
-                        <div class="container">
-
-                            <label for="dinner-label">Dinner</label>
-
-                            <div class="input-field">
-                                <div aria-labelledby="spaghetti" class="visually-hidden">Spaghetti Emoji</div>
-                                <span class="label-icon" id="spaghetti">🍝</span>
-                                <input type="number" id="dinner-label" class="input" placeholder="enter dinner calories">
-                            </div>
-
-                        </div>
-        
-                        
-
-                        <div class="container">
-                            <button class="add-btn" aria-label="plus">➕</button>
-                        </div>
-
-                        <div class="container">
-
-                            <label for="snacks-label">snacks</label>   
-
-                            <div class="input-field">
-                                <div aria-labelledby="rice-cracker" class="visually-hidden">Rice Cracker Emoji</div>
-                                <span class="label-icon" id="rice-cracker">🍘</span>
-                                <input type="number" id="snacks-label" class="input" placeholder="enter snacks calories">
-                            </div>
-                        </div>
-
-                        
-
-                        <div class="container">
-
-                                <div class="equals-btn">
-
-                                    <div aria-labelledby="equals" class="visually-hidden">Equals Emoji</div>
-                                    <span class="label-icon" id="equals">🟰</span>
-                                </div>
-                        </div>
-        
-                        <div class="container">
-                            <h2>Daily total calories</h2>
-                            <div class="total">
-                                <!-- js will populate total here -->
-                                <p>555</p>
-                            </div>
-                        </div>
-        
-                    </fieldset>
-
+        <!-- .mega-container -->
+        <div class="mega-container">
+            <div class="topbar">
+                <h2 id="cal-goal">Calorie goal</h2>
+                <div class="total">
+                    <p>min 1500 :D</p>
                 </div>
-            </form>
-        </main>
-        <!-- end main -->
+            </div>
 
-        <!-- footer -->
-        <footer>
-            <h2 class="theme">Theme by @Dracula</h2>
-        </footer>
-        <!-- end footer -->
+            <main>
+                <form>
+                    <div class="flex-container">
+                        <fieldset>
+                            <div class="container">
+                        
+                                <label for="brkfast-label">Breakfast</label>
+
+                                <div class="input-field">
+                                    <div aria-labelledby="cooking" class="visually-hidden">Cooking Emoji</div>
+                                    <span class="label-icon" id="cooking">🍳</span>
+                                    <input type="number" id="brkfast-label" class="input" placeholder="enter breakfast calories">
+                                </div>
+
+                            </div>
+
+                            <div class="container">
+
+                                <button class="add-btn" aria-label="plus">➕</button>
+                            </div>
+            
+                            <div class="container">
+
+                                <label for="lunch-label">Lunch</label>
+
+                                <div class="input-field">
+                                    <div aria-labelledby="bento-box" class="visually-hidden">Cooking Emoji</div>
+                                    <span class="label-icon" id="bento-box">🍱</span>
+                                    <input type="number" id="lunch-label" class="input" placeholder="enter lunch calories">
+                                </div>
+                            </div>
+                            
+
+                            <div class="container">
+
+                                <button class="plus-btn" aria-label="plus">➕</button>
+
+                            </div>
+            
+                            <div class="container">
+
+                                <label for="dinner-label">Dinner</label>
+
+                                <div class="input-field">
+                                    <div aria-labelledby="spaghetti" class="visually-hidden">Spaghetti Emoji</div>
+                                    <span class="label-icon" id="spaghetti">🍝</span>
+                                    <input type="number" id="dinner-label" class="input" placeholder="enter dinner calories">
+                                </div>
+
+                            </div>
+            
+                            
+
+                            <div class="container">
+                                <button class="add-btn" aria-label="plus">➕</button>
+                            </div>
+
+                            <div class="container">
+
+                                <label for="snacks-label">snacks</label>   
+
+                                <div class="input-field">
+                                    <div aria-labelledby="rice-cracker" class="visually-hidden">Rice Cracker Emoji</div>
+                                    <span class="label-icon" id="rice-cracker">🍘</span>
+                                    <input type="number" id="snacks-label" class="input" placeholder="enter snacks calories">
+                                </div>
+                            </div>
+
+                            
+
+                            <div class="container">
+
+                                    <div class="equals-btn">
+
+                                        <div aria-labelledby="equals" class="visually-hidden">Equals Emoji</div>
+                                        <span class="label-icon" id="equals">🟰</span>
+                                    </div>
+                            </div>
+            
+                            <div class="container">
+                                <h2>Daily total calories</h2>
+                                <div class="total">
+                                    <!-- js will populate total here -->
+                                    <p>555</p>
+                                </div>
+                            </div>
+            
+                        </fieldset>
+
+                    </div>
+                </form>
+            </main>
+            <!-- end main -->
+
+            <!-- footer -->
+            <footer class="container">
+                <h2 class="theme">Theme by @Dracula</h2>
+            </footer>
+            <!-- end footer -->
+            
+        </div>
+        <!-- end .mega-container -->
         
     </body>
 </html>
