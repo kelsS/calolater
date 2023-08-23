@@ -137,8 +137,12 @@ fieldset {
 }
 
 .label-icon {
-    padding-right: 10px;
-    font-size: 40px;
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+.total {
+    font-size: 45px;
 }
 
 .visually-hidden {
@@ -152,3 +156,18 @@ fieldset {
     white-space: nowrap;
     border-width: 0;
 }
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    .label-icon {
+        padding-right: 10px;
+        font-size: 40px;
+    }
+    
+  }
