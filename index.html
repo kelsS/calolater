@@ -14,20 +14,20 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
     <body id="app">
-
-        <div aria-labelledby="sparkles1 sparkles2" class="visually-hidden">Sparkles Emoji</div>
-        <h1>
-            <span id="sparkles1">✨</span>You go get those calories [lady|man|enby!]<span id="sparkles2">✨</span>
-        </h1>
-        
         <!-- .mega-container -->
         <div class="mega-container">
-            <div class="topbar">
-                <h2 id="cal-goal">Calorie goal</h2>
-                <div class="total">
-                    <p>min 1500 :D</p>
+            <header> 
+                <h1>
+                    <span aria-hidden="true">✨</span>You go get those calories human!<span aria-hidden="true">✨</span>
+                </h1>
+                
+                <div class="topbar">
+                    <h2 id="cal-goal">Daily calorie goal</h2>
+                    <div class="total">
+                        <p>min 1500 :)</p>
+                    </div>
                 </div>
-            </div>
+            </header>
 
             <main>
                 <form>
@@ -38,16 +38,15 @@
                                 <label for="brkfast-label">Breakfast</label>
 
                                 <div class="input-field">
-                                    <div aria-labelledby="cooking" class="visually-hidden">Cooking Emoji</div>
-                                    <span class="label-icon" id="cooking">🍳</span>
-                                    <input type="number" id="brkfast-label" class="input" placeholder="enter breakfast calories">
+                                    <span class="label-icon" aria-hidden="true">🍳</span>
+                                    <input type="number" min="0" id="brkfast-label" class="input" placeholder="enter breakfast calories">
                                 </div>
 
                             </div>
 
                             <div class="container">
 
-                                <button class="add-btn" aria-label="plus">➕</button>
+                                <button class="add-btn" aria-label="add">➕</button>
                             </div>
             
                             <div class="container">
@@ -55,16 +54,15 @@
                                 <label for="lunch-label">Lunch</label>
 
                                 <div class="input-field">
-                                    <div aria-labelledby="bento-box" class="visually-hidden">Cooking Emoji</div>
-                                    <span class="label-icon" id="bento-box">🍱</span>
-                                    <input type="number" id="lunch-label" class="input" placeholder="enter lunch calories">
+                                    <span class="label-icon" aria-hidden="true">🍱</span>
+                                    <input type="number" min="0" id="lunch-label" class="input" placeholder="enter lunch calories">
                                 </div>
                             </div>
                             
 
                             <div class="container">
 
-                                <button class="plus-btn" aria-label="plus">➕</button>
+                                <button class="add-btn" aria-label="add">➕</button>
 
                             </div>
             
@@ -73,9 +71,8 @@
                                 <label for="dinner-label">Dinner</label>
 
                                 <div class="input-field">
-                                    <div aria-labelledby="spaghetti" class="visually-hidden">Spaghetti Emoji</div>
-                                    <span class="label-icon" id="spaghetti">🍝</span>
-                                    <input type="number" id="dinner-label" class="input" placeholder="enter dinner calories">
+                                    <span class="label-icon" aria-hidden="true">🍝</span>
+                                    <input type="number" min="0" id="dinner-label" class="input" placeholder="enter dinner calories">
                                 </div>
 
                             </div>
@@ -83,17 +80,16 @@
                             
 
                             <div class="container">
-                                <button class="add-btn" aria-label="plus">➕</button>
+                                <button class="add-btn" aria-label="add">➕</button>
                             </div>
 
                             <div class="container">
 
-                                <label for="snacks-label">snacks</label>   
+                                <label for="snacks-label">Snacks</label>   
 
                                 <div class="input-field">
-                                    <div aria-labelledby="rice-cracker" class="visually-hidden">Rice Cracker Emoji</div>
-                                    <span class="label-icon" id="rice-cracker">🍘</span>
-                                    <input type="number" id="snacks-label" class="input" placeholder="enter snacks calories">
+                                    <span class="label-icon" aria-hidden="true">🍘</span>
+                                    <input type="number" min="0" id="snacks-label" class="input" placeholder="enter snacks calories">
                                 </div>
                             </div>
 
@@ -102,9 +98,10 @@
                             <div class="container">
 
                                     <div class="equals-btn">
-
-                                        <div aria-labelledby="equals" class="visually-hidden">Equals Emoji</div>
-                                        <span class="label-icon" id="equals">🟰</span>
+                                        <span aria-labelledby="equals" class="visually-hidden">Equals</span>
+                                        <span class="label-icon" id="equals">
+                                            <span aria-hidden="true" class="equals-icon">🟰</span>
+                                        </span>
                                     </div>
                             </div>
             
