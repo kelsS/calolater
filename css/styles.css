@@ -191,12 +191,7 @@ footer {
     border-width: 0;
 }
 
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
+@media (min-width: 768px) {
   
     .topbar h1 {
         font-size: 30px;
