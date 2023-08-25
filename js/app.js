@@ -7,5 +7,5 @@ function appFeats () {
     
 }
 
-// fire!
-appFeats ();
+// 3..2..1..Liftoff! 🚀
+appFeats (); 
