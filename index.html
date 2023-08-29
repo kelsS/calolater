@@ -39,7 +39,7 @@
 
                                 <div class="input-field">
                                     <span class="label-icon" aria-hidden="true">🍳</span>
-                                    <input type="number" min="0" id="brkfast-label" class="input" placeholder="ex: 450" val="0">
+                                    <input type="number" min="0" id="brkfast-label" class="input" placeholder="e.g. 450" val="0">
                                 </div>
 
                             </div>
@@ -55,7 +55,7 @@
 
                                 <div class="input-field">
                                     <span class="label-icon" aria-hidden="true">🍱</span>
-                                    <input type="number" min="0" id="lunch-label" class="input" placeholder="ex: 350">
+                                    <input type="number" min="0" id="lunch-label" class="input" placeholder="e.g. 350" val="0">
                                 </div>
                             </div>
                             
@@ -72,7 +72,7 @@
 
                                 <div class="input-field">
                                     <span class="label-icon" aria-hidden="true">🍝</span>
-                                    <input type="number" min="0" id="dinner-label" class="input" placeholder="ex: 250">
+                                    <input type="number" min="0" id="dinner-label" class="input" placeholder="e.g. 250" val="0">
                                 </div>
 
                             </div>
@@ -89,7 +89,7 @@
 
                                 <div class="input-field">
                                     <span class="label-icon" aria-hidden="true">🍘</span>
-                                    <input type="number" min="0" id="snacks-label" class="input" placeholder="ex: 150">
+                                    <input type="number" min="0" id="snacks-label" class="input" placeholder="e.g. 150" val="0">
                                 </div>
                             </div>
 
@@ -102,8 +102,8 @@
                             </div>
             
                             <div class="container">
-                                <h2>Daily total calories</h2>
-                                <div class="total-container">
+                                <h2 id="daily-cals-heading">Daily total calories</h2>
+                                <div class="total-container" aria-labelledby="daily-cals-heading">
                                     <!-- js will populate total here -->
                                     <p id="total">555</p>
                                 </div>

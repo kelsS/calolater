@@ -29,6 +29,7 @@ function appFeats () {
     // add event listener for form inputs
     // add event listener for add buttons
     // add event listener for equals button which adds the total from the inputs to the total
+    
 
     
 }
