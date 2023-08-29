@@ -93,6 +93,24 @@ h6 {
     outline: 4px dotted var(--drc-green);
 }
 
+/* !important is required */
+[hidden] {
+  display: none !important;
+}
+
+/* Visually hidden text */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 body {
     background: var(--drc-black);
     color: var(--drc-white);
@@ -208,20 +226,31 @@ footer {
     /* @todo: change to css grid*/
 }
 
-.total {
-    font-size: 45px;
+.pen-by {
+    font-size: 30px;
+    text-align: center;
+    color: var(--drc-green);
+    text-shadow: 2px 7px 10px rgb(15 3 15 / 50%);
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
+.pen-by a {
+    color: var(--drc-green);
+}
+
+.pen-by a:focus {
+    outline: 5px dotted var(--drc-green);
+}
+
+.new-tab:after {
+    font-family: "Font Awesome 6 Free";
+    content: "\f08e";
+    position: relative;
+    font-size: 16px;
+    margin-left: -8px;
+}
+
+.total {
+    font-size: 45px;
 }
 
 /* Medium devices (tablets, 768px and up) */
