@@ -235,18 +235,22 @@ footer {
 
 .pen-by a {
     color: var(--drc-green);
+    text-decoration: none;
+    position: relative;
 }
 
-.pen-by a:focus {
+.pen-by a:focus,
+.pen-by a:hover {
     outline: 5px dotted var(--drc-green);
 }
 
 .new-tab:after {
-    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 16px;
+    font: var(--fa-font-solid);
     content: "\f08e";
-    position: relative;
     font-size: 16px;
-    margin-left: -8px;
 }
 
 .total {
