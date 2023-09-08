@@ -89,6 +89,35 @@ h6 {
     --drc-lt-black: #454158;
 }
 
+*:focus {
+    outline: 5px dotted var(--drc-pink);
+}
+
+/* !important is required */
+[hidden] {
+  /* display: none !important; */
+  /* setting to visibility hidden instead so that page reflow is not caused when alert appears */
+  visibility: hidden;
+}
+
+/* Visually hidden text */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+html {
+    background-color: var(--drc-lt-black);
+    border-bottom: 4px solid var(--drc-pink);
+}
+
 body {
     background: var(--drc-black);
     color: var(--drc-white);
@@ -101,6 +130,22 @@ body {
     padding: 16px;
 }
 
+.container-sm {
+    margin: 16px 16px 0 16px;
+    padding: 16px 16px 0 16px;
+}
+
+.total-container {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border-top: 4px solid var(--drc-pink);
+    background-color: var(--drc-lt-black);
+    text-shadow: 2px 7px 10px rgb(15 3 15 / 50%); 
+}
+
 h1,
 h2,
 h3 {
@@ -111,11 +156,15 @@ h1 {
     font-size: 28px;
     padding: 45px;
     margin-bottom: 16px;
-    background-color: #7970A9;
+    background-color: var(--drc-lt-purple);
 }
 
 h2 {
     font-size: 30px;
+}
+
+.theme {
+    text-shadow: 2px 7px 10px rgb(15 3 15 / 50%);   
 }
 
 h2#cal-goal {
@@ -132,6 +181,27 @@ label {
     margin-bottom: 25px;
 }
 
+input {
+    border: 1px solid var(--drc-white);
+    background-color: var(--drc-white);
+}
+
+input:hover {
+    outline: 5px dotted var(--drc-pink);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--drc-black);
+    border-color: var(--drc-green);
+    outline: 5px dotted var(--drc-pink);
+}
+
+button:active {
+    background-color: var(--drc-green);
+    border-color: var(--drc-pink);
+}
+
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -141,6 +211,8 @@ label {
 
 fieldset {
     padding: 25px 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
     border: 0;
     flex: 1;
     width: 100%;
@@ -167,6 +239,29 @@ fieldset {
     padding-top: 16px;
 }
 
+.plus-sign {
+    border: 3px solid var(--drc-lt-purple);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 40px;
+    box-shadow: 0px 8px 13px 3px rgba(0,0,0,0.7);  
+}
+
+.calc-btn {
+    border: 3px solid var(--drc-lt-purple);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 40px;
+    background-color: var(--drc-green);
+    box-shadow: 0px 8px 13px 3px rgba(0,0,0,0.7);   
+}
+
+.celebrate-alert {
+    display: block;
+    padding-bottom: 16px;
+    margin-bottom: 35px;
+}
+
 footer {
     border-top: 4px solid var(--drc-pink);
     padding: 45px;
@@ -175,22 +270,74 @@ footer {
     /* @todo: change to css grid*/
 }
 
-.total {
+footer a {
+    color: var(--drc-green);
+    text-decoration: none;
+}
+
+footer a:active,
+footer a:visited {
+    color: var(--drc-pink);
+}
+
+footer a:focus,
+footer a:hover {
+    outline: 5px dotted var(--drc-green);
+}
+
+.footer-bg {
+    background-color: var(--drc-lt-black);
+}
+
+.app-by {
+    font-size: 30px;
+    text-align: center;
+    color: var(--drc-green);
+    text-shadow: 2px 7px 10px rgb(15 3 15 / 50%);
+}
+
+.app-by a {
+    color: var(--drc-green);
+    text-decoration: none;
+    position: relative;
+}
+
+.app-by a:active,
+.app-by a:visited {
+    color: var(--drc-pink);
+}
+
+.app-by a:focus,
+.app-by a:hover {
+    outline: 5px dotted var(--drc-green);
+}
+
+.new-tab:after {
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 16px;
+    font: var(--fa-font-solid);
+    content: "\f08e";
+    font-size: 16px;
+}
+
+.total-goal {
     font-size: 45px;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
+#total-cals {
+    font-size: 65px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
+#congrats-txt {
+    font-size: 25px;
+    padding-bottom: 16px;
+    margin-bottom: 0;
+}
+
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   
     .topbar h1 {
@@ -205,6 +352,15 @@ footer {
     .label-icon {
         padding-right: 10px;
         font-size: 53px;
+    }
+    
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+  
+    fieldset {
+        width: 65%;
     }
     
   }
