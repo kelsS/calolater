@@ -260,6 +260,8 @@ fieldset {
     display: block;
     padding-bottom: 16px;
     margin-bottom: 35px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 footer {
