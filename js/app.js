@@ -73,12 +73,18 @@ function appFeats () {
         total.textContent = totalCals;
 
         // calorie total message
-        totalCalsAlert.setAttribute('role', 'alert');
+        if (totalCals === 0) {
+            totalCalsAlert.removeAttribute('role');
+        } else {
+            totalCalsAlert.setAttribute('role', 'alert');
+        }
 
         // celebrate alert
         if (totalCals >= 1500) {
             celebrateAlert.removeAttribute('hidden');
             // console.log("min cals reached");
+        } else {
+            celebrateAlert.setAttribute('hidden', '');
         }
     }
     
